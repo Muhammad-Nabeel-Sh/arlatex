@@ -4,5 +4,39 @@
 \RequirePackage{unicode-math}
 \RequirePackage{graphicx}
 \RequirePackage{fontspec}
-\RequirePackage[utf8]{inputenc}
+\RequirePackage{newunicodechar}
 
+% The list of arabic characters to be used in maths mode
+\newcommand\Alef{\mathord{\textnormal{أ}}}
+\newcommand\Beh{\mathord{\textnormal{ب}}}
+\newcommand\Teh{\mathord{\textnormal{ت}}}
+\newcommand\Theh{\mathord{\textnormal{ث}}}
+\newcommand\Jeem{\mathord{\textnormal{ج}}}
+\newcommand\Hah{\mathord{\textnormal{ح}}}
+\newcommand\Khah{\mathord{\textnormal{خ}}}
+\newcommand\Dal{\mathord{\textnormal{د}}}
+\newcommand\Thal{\mathord{\textnormal{ذ}}}
+\newcommand\Reh{\mathord{\textnormal{ر}}}
+\newcommand\Zain{\mathord{\textnormal{ز}}}
+\newcommand\Seen{\mathord{\textnormal{س}}}
+\newcommand\Sheen{\mathord{\textnormal{ش}}}
+\newcommand\Sad{\mathord{\textnormal{ص}}}
+\newcommand\Dad{\mathord{\textnormal{ض}}}
+\newcommand\Tah{\mathord{\textnormal{ط}}}
+\newcommand\Zah{\mathord{\textnormal{ظ}}}
+\newcommand\Ain{\mathord{\textnormal{ع}}}
+\newcommand\Ghain{\mathord{\textnormal{غ}}}
+\newcommand\Feh{\mathord{\textnormal{ف}}}
+\newcommand\Qaf{\mathord{\textnormal{ق}}}
+\newcommand\Kaf{\mathord{\textnormal{ك}}}
+\newcommand\Lam{\mathord{\textnormal{ل}}}
+\newcommand\Meem{\mathord{\textnormal{م}}}
+\newcommand\Noon{\mathord{\textnormal{ن}}}
+\newcommand\Heh{\mathord{\textnormal{ه}}}
+\newcommand\Waw{\mathord{\textnormal{و}}}
+\newcommand\Yeh{\mathord{\textnormal{ي}}}
+
+\newcommand\arRadius{\mathord{\textnormal{؈}}}
+
+\newcommand{\arSqrt}[1]{\reflectbox{\ensuremath{\sqrt{\reflectbox{\ensuremath{#1}}}}}}
+\newcommand{\arSum}[3]{\reflectbox{\ensuremath{\displaystyle\sum\limits_{\reflectbox{\ensuremath{#1}}}^{\reflectbox{\ensuremath{#2}}} \reflectbox{ \ensuremath{#3} }}}}
